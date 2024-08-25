@@ -25,5 +25,9 @@ namespace WebMarket.Data
                 Console.WriteLine(ex.ToString());
             }
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            //optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=marketdb;Username=postgres;Password=postgres");
+        }
     }
 }
