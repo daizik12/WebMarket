@@ -8,13 +8,13 @@ namespace WebMarket.models
     public class Basket
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         [MaxLength(100)]
-        public string address {  get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
         [MaxLength(512)]
-        public string discription {  get; set; } = string.Empty;
-        public User? user { get; set; }
-        public List<Order>? orders { get; set; }
+        public string Discription { get; set; } = string.Empty;
+        public User? User { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
 
     }
 }

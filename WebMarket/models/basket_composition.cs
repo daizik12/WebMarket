@@ -5,12 +5,13 @@ namespace WebMarket.models
 {
     public class Basket_composition
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
-        public int quatity { get; set; }
+        public int Quatity { get; set; }
         [MaxLength(512)]
-        public string discription { get; set; } = string.Empty;
+        public string Discription { get; set; } = string.Empty;
         //public User? userid { get; set; }
-        public Product? productid { get; set; }
+        public int? ProductId { get; set; }
+        public Product? Product { get; set; }
     }
 }

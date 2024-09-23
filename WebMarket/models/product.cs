@@ -10,17 +10,19 @@ namespace WebMarket.models
     public class Product
     {
         [Key]
-        public int id { get; set; }
-        [Required, MaxLength(64)]
-        public string name { get; set; } = string.Empty;
+        public int Id { get; set; }
+        [Required, MaxLength(32)]
+        public string Name { get; set; } = string.Empty;
         [Required]
-        public int quantity {  get; set; }
+        public int Quantity {  get; set; }
         [Required, Column(TypeName = "decimal(18,2")]
-        public int price { get; set; }
+        public int Price { get; set; }
         [MaxLength(512)]
-        public string discription { get; set; } = string.Empty;
-        public Manufacturer? manufacturerid { get; set; }
-        public Category? categoryid { get; set; }
-        public List<Basket_composition>? basket_Compositions { get; set; }
+        public string Discription { get; set; } = string.Empty;
+        public int? ManufacturerId { get; set; }
+        public Manufacturer? Manufacturer { get; set; }
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
+        public List<Basket_composition> Basket_Compositions { get; set; } = new List<Basket_composition>();
     }
 }

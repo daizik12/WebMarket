@@ -7,10 +7,10 @@ namespace WebMarket.models
     public class Manufacturer
     {
         [Key]
-        public int id { get; set; }
-        public string name { get; set; } = string.Empty;
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
         [MaxLength(512)]
-        public string description { get; set; } = string.Empty;
-        public List<Product>? products { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public List<Product>? Products { get; set; }
     }
 }

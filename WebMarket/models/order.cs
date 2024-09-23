@@ -7,14 +7,14 @@ namespace WebMarket.models
     public class Order
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
-        public DateTime open { get; set; }
+        public DateTime Open { get; set; }
         [Required]
-        public DateTime close { get; set; }
+        public DateTime Close { get; set; }
         [MaxLength(512)]
-        public string discription { get; set; } = string.Empty;
-        public Basket? basketid { get; set; }
-        public User? userid { get; set; }
+        public string Discription { get; set; } = string.Empty;
+        public Basket? Basket { get; set; }
+        public User? User { get; set; }
     }
 }
