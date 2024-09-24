@@ -7,8 +7,6 @@ namespace WebMarket.Dtos.Basket_composition
     {
         [Required]
         public int Quatity { get; set; }
-        public int? ProductId { get; set; }
-
-        public string? Discription { get; set; } = string.Empty;
+        public int ProductId { get; set; }
     }
 }

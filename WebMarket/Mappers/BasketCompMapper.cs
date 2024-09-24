@@ -10,19 +10,16 @@ namespace WebMarket.Mappers
             Id = BasketCompModel.Id,
             Quatity = BasketCompModel.Quatity,
             ProductId = BasketCompModel.ProductId,
-            Discription = BasketCompModel.Discription
         };
         public static Basket_composition ToBasketFromCreateDto(this Basket_composition BasketCompModel) => new Basket_composition
         {
             Quatity = BasketCompModel.Quatity,
             ProductId = BasketCompModel.ProductId,
-            Discription = BasketCompModel.Discription
         };
         public static Basket_composition ToBasketFromUpdateDto(this Basket_composition BasketCompModel) => new Basket_composition
         {
             Quatity = BasketCompModel.Quatity,
             ProductId = BasketCompModel.ProductId,
-            Discription = BasketCompModel.Discription
         };
     }
 }

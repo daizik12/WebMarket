@@ -14,8 +14,6 @@ namespace WebMarket.Mappers
             Name = ProductModel.Name,
             Quantity = ProductModel.Quantity,
             Price = ProductModel.Price,
-            ManufacturerId = ProductModel.ManufacturerId,
-            CategoryId = ProductModel.CategoryId,
             BasketCompositions = ProductModel.Basket_Compositions.Select(c => c.ToBasketCompDto()).ToList()
         };
         public static Product ToProductFromCreateDto(this Product ProductModel) => new Product

@@ -12,8 +12,8 @@ namespace WebMarket.Dtos.Product
         [Required, Range(1, 10000000)]
         public int Price { get; set; }
         [Required]
-        public int ManufacturerId { get; set; }
+        public int? ManufacturerId { get; set; }
         [Required]
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
     }
 }

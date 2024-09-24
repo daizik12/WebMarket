@@ -9,9 +9,8 @@ namespace WebMarket.models
         [Required]
         public int Quatity { get; set; }
         [MaxLength(512)]
-        public string Discription { get; set; } = string.Empty;
         //public User? userid { get; set; }
-        public int? ProductId { get; set; }
-        public Product? Product { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; } = new Product();
     }
 }

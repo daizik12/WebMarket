@@ -18,7 +18,7 @@ namespace WebMarket.models
         [Required, Column(TypeName = "decimal(18,2")]
         public int Price { get; set; }
         [MaxLength(512)]
-        public string Discription { get; set; } = string.Empty;
+        public string? Discription { get; set; } = string.Empty;
         public int? ManufacturerId { get; set; }
         public Manufacturer? Manufacturer { get; set; }
         public int? CategoryId { get; set; }
